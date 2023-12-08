@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(body-bg.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+}
+.clock-bg{
+    height: 80%;
+    width: 50%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;            
+}
+.timer {
+    height: 80%;
+    width: 75%;
+    margin: auto;
+
+    padding-top: 15px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+}
+
+#clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: url("bg2.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+#button {
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+#time_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 20%;
+    width: 60%;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: auto;
+    background-color: rgb(49, 48, 48);
+}
+
+#start,
+#stop {
+    width: 30%;
+    height: 40px;
+    margin: auto;
+    font: 400;
+    font-size: larger;
+    color:bisque;
+    background-color: rgb(49, 48, 48);
+}
+
+#display{
+    text-align:center;
+    height: 75%;
+    width: 100%;
+    text-wrap:wrap;
+    font-size: 300%;
+    color:bisque;
+    font-weight:700;
+    font-family: 'Smooch Sans', sans-serif;
+
+}
+
+@media (max-width:1200px ){
+    #clock{
+        height: 250px;
+        width: 250px;
+    }
+    .clock-bg{
+        height: 50%;
+        width: 80%;
+    }
+    #display{
+        font-size: 200%;
+    }
+
+}
+
+@media (max-width:500px){
+    #start,#stop{
+        font-size: 80%;
+    }
+}
